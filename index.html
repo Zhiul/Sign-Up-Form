@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo-wrapper">
+                <img class="logo" src="logo.png" alt="">
+                <h1>Paradisiac Island</h1>
+            </div>
+        </header>
+
+        <div class="sign-up-form-wrapper">
+            <div class="section-1">
+                <p>Do you want to get the best trip to a paradisiac island? Sign up <em>now</em> to get started. </p>
+                <p>You know you want to.</p>
+            </div>
+
+    <form id='register-form' action="" class="section-2">
+        <legend>Let's do this!</legend>
+
+        <div class="register-form-inputs">
+            <div>
+                <label for="user-first-name">First Name</label>
+                <input type="text" name="user-first-name" id="user-first-name" required>
+            </div>
+               
+            <div>
+                <label for="user-last-name">Last Name</label>
+                <input type="text" name="user-last-name" id="user-last-name" required>
+            </div>
+    
+            <div>
+                <label for="user-email">Email</label>
+                <input type="email" name="email" id="user-email" required>
+            </div>
+    
+            <div>
+                <label for="user-number">Phone Number</label>
+                <input type="tel" name="user-number" id="user-number" required>
+            </div>
+    
+            <div class="user-password">
+                <label for="user-password">Password</label>
+                <input class="error" type="password" name="user-password" id="user-password" required>
+                <p class="input-error-msg">* Passwords do not match</p>
+            </div>
+    
+            <div>
+                <label for="user-confirm-password">Confirm Password</label>
+                <input class="error" type="password" name="user-password" id="user-password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            </div>
+        </div>
+  
+    </form>
+
+    <div class="section-3">
+        <button type="submit" form='register-form'>Create Account</button>
+
+        <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+        </div>
+    </main>
+    
+</body>
+</html>
